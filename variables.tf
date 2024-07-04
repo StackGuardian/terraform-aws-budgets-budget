@@ -1,5 +1,9 @@
 variable "total_limit" {
   type = string
+  description = "Total amount of budget in dollars"
+}
+variable "region" {
+  type = string
 }
 
 variable "notification_threshold" {
