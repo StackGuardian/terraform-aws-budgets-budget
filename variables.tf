@@ -2,9 +2,6 @@ variable "total_limit" {
   type = string
   description = "Total amount of budget in dollars"
 }
-variable "region" {
-  type = string
-}
 
 variable "notification_threshold" {
   type = number
@@ -16,4 +13,12 @@ variable "notification_type" {
 }
 variable "emails" {
   type = list
+}
+
+#############
+# Region is just required to determine, where to setup the budget resource
+#############
+
+variable "region" {
+  type = string
 }
